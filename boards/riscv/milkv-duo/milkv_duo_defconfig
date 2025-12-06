@@ -1,7 +1,6 @@
 # Copyright (c) 2024 GP Orcullo
 # SPDX-License-Identifier: Apache-2.0
 
-CONFIG_BOARD_MILKV_DUO=y
 CONFIG_SOC_SERIES_SOPHGO=y
 # CONFIG_XIP is not set
 

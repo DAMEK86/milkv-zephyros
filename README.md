@@ -1,5 +1,5 @@
 ### Requirements
-- Zephyr development environment: Follow [Getting Started Guide](https://docs.zephyrproject.org/3.6.0/develop/getting_started/index.html)
+- Zephyr development environment: Follow [Getting Started Guide](https://docs.zephyrproject.org/4.3.0/develop/getting_started/index.html)
 - Milk-V Duo: Install the latest [image](https://github.com/kinsamanka/milkv-zephyros/releases/download/v0.1.1-alpha/milkv-duo_sdcard.img.gz)
 
 ### Steps

@@ -1,0 +1,9 @@
+# Copyright (c) 2024 GP Orcullo
+# SPDX-License-Identifier: Apache-2.0
+
+family:
+  - name: sophgo
+    series:
+      - name: cv1800b
+        socs:
+          - name: cv1800b_little

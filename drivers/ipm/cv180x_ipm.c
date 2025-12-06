@@ -38,7 +38,7 @@ LOG_MODULE_REGISTER(cv180x_ipm, CONFIG_IPM_LOG_LEVEL);
 
 
 struct cv180x_ipm_config {
-	io_port_t base;
+	mem_addr_t base;
 	void (*irq_config_func)(const struct device *dev);
 };
 
@@ -47,7 +47,7 @@ struct cv180x_ipm_data {
 	void *callback_ctx;
 };
 
-static int cv180x_get_hw_mutex(io_port_t base, uint8_t mask)
+static int cv180x_get_hw_mutex(mem_addr_t base, uint8_t mask)
 {
 	uint32_t count = k_us_to_cyc_ceil32(CV180X_SPINLOCK_TIMEOUT);
 	uint32_t start = k_cycle_get_32();
@@ -67,7 +67,7 @@ static int cv180x_get_hw_mutex(io_port_t base, uint8_t mask)
 	return 0;
 }
 
-static inline void cv180x_release_hw_mutex(io_port_t base, uint8_t mask)
+static inline void cv180x_release_hw_mutex(mem_addr_t base, uint8_t mask)
 {
 	sys_write8(mask, base + HW_MUTEX);
 }
